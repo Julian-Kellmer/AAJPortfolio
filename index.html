@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>Animación p5.js</title>
+    <link
+      rel="stylesheet"
+      href="/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet" />
+  </head>
+  <body class="">
+    <main class="">
+      <section
+        id="canvas-container"
+        class="h-[100dvh] relative">
+        <div
+          class="absolute top-[-15%] left-[0] w-full h-full flex-col flex align-center justify-center content-center items-center text-[#262626]">
+          <h1 class="main-titulo font-bold text-[8rem] leading-none">#AAJ</h1>
+          <h2 class="font-light text-[8rem] leading-none uppercase">
+            Portfolio
+          </h2>
+        </div>
+        <div
+          class="folder flex items-end pb-2 justify-center absolute top-[48%] left-[calc(50%-6rem)]">
+          <button
+            id="animarBtn"
+            class="py-7 border border-gray-800 px-8 bg-[#1e1e1e] rounded text-white">
+            Trabajos
+          </button>
+        </div>
+      </section>
+
+      <section id="container">
+        <header class="header">
+          <h1>Nuestros Servicios</h1>
+          <p class="subtitle">
+            Servicio excepcional, de diseño y desarrollo web
+          </p>
+        </header>
+
+        <div class="services-grid justify-center">
+          <div class="service-card">
+            <div class="card-icon">
+              <svg
+                width="40"
+                height="40"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M17 7.82959L18.6965 9.35641C20.239 10.7447 21.0103 11.4389 21.0103 12.3296C21.0103 13.2203 20.239 13.9145 18.6965 15.3028L17 16.8296"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round" />
+                <path
+                  d="M13.9868 5L10.0132 19.8297"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round" />
+                <path
+                  d="M7.00005 7.82959L5.30358 9.35641C3.76102 10.7447 2.98975 11.4389 2.98975 12.3296C2.98975 13.2203 3.76102 13.9145 5.30358 15.3028L7.00005 16.8296"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round" />
+              </svg>
+            </div>
+            <h2>Web Development</h2>
+            <p>
+              Custom websites crafted with precision and care, focusing on
+              performance and user experience.
+            </p>
+            <div
+              id="scratch-container"
+              class="relative w-full h-24 mx-auto mt-4 rounded overflow-hidden border"></div>
+          </div>
+
+          <div class="service-card">
+            <div class="card-icon">
+              <svg
+                width="40"
+                height="40"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M3.5 8H20.5"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path
+                  d="M6 16L10 16"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path
+                  d="M14 16L18 16"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <rect
+                  x="3"
+                  y="4"
+                  width="18"
+                  height="16"
+                  rx="2"
+                  stroke="currentColor"
+                  stroke-width="1.5" />
+                <path
+                  d="M8 4V2"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path
+                  d="M16 4V2"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </div>
+            <h2>UI/UX Design</h2>
+            <p>
+              Intuitive and elegant interfaces that elevate your digital
+              presence with thoughtful design.
+            </p>
+            <div
+              id="scratch-container2"
+              class="relative w-full h-24 mx-auto mt-4 rounded overflow-hidden border"></div>
+          </div>
+
+          <div class="service-card">
+            <div class="card-icon">
+              <svg
+                width="40"
+                height="40"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M3 19H21"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path
+                  d="M5 14H19L14 7V5H10V7L5 14Z"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </div>
+            <h2>Brand Strategy</h2>
+            <p>
+              Strategic brand development that communicates your unique vision
+              and values.
+            </p>
+            <div
+              id="scratch-container3"
+              class="relative w-full h-24 mx-auto mt-4 rounded overflow-hidden border"></div>
+          </div>
+
+          <div class="service-card">
+            <div class="card-icon">
+              <svg
+                width="40"
+                height="40"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <circle
+                  cx="12"
+                  cy="12"
+                  r="10"
+                  stroke="currentColor"
+                  stroke-width="1.5" />
+                <path
+                  d="M12 8V12L14 14"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </div>
+            <h2>24/7 Support</h2>
+            <p>
+              Dedicated assistance whenever you need it, ensuring your digital
+              assets are always performing optimally.
+            </p>
+            <div
+              id="scratch-container4"
+              class="relative w-full h-24 mx-auto mt-4 rounded overflow-hidden border"></div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="flex flex-col content-center justify-center   px-4 relative">
+        <h2 class="text-2xl md:text-3xl font-light  mx-auto">
+          Somos un equipo que no para, porque el mejor diseño es el que
+          <strong class="font-semibold italic">nunca se queda quieto.</strong>
+        </h2>
+
+        <!-- Imagen de equipo -->
+        <div
+          class="flex justify-center text-center align-center content-center ">
+          <img
+            src="/public/labanda-Photoroom.png"
+            alt="Equipo de diseño"
+            class="max-w-full w-[300px] md:w-[80%]" />
+        </div>
+
+        <!-- Nombres y roles -->
+        <section class="absolute top-[65%] flex">
+          <!-- Tarjeta 1 -->
+          <div
+            class="backdrop-blur-md bg-black/50 border border-white/20 rounded-2xl p-6 text-white shadow-xl text-center">
+            <h3 class="text-xl font-semibold mb-1">Julian Kellmer</h3>
+            <p class="text-sm text-indigo-300 mb-3">Director de Arte</p>
+            <p class="text-sm text-gray-200">
+              Transforma diseños en experiencias digitales fluidas, accesibles y
+              rápidas.
+            </p>
+          </div>
+
+          <!-- Tarjeta 2 -->
+          <div
+            class="backdrop-blur-md bg-black/50 border border-white/20 rounded-2xl p-6 text-white shadow-xl text-center">
+            <h3 class="text-xl font-semibold mb-1">Nicolas Miranda</h3>
+            <p class="text-sm text-indigo-300 mb-3">Desarrollador Frontend</p>
+            <p class="text-sm text-gray-200">
+              Lidera la visión estética de cada proyecto, combinando creatividad
+              con estrategia visual.
+            </p>
+          </div>
+
+          <!-- Tarjeta 3 -->
+          <div
+            class="backdrop-blur-md bg-black/50 border border-white/20 rounded-2xl p-6 text-white shadow-xl text-center">
+            <h3 class="text-xl font-semibold mb-1">Agostina Caunedo</h3>
+            <p class="text-sm text-indigo-300 mb-3">Diseñadora UX/UI</p>
+            <p class="text-sm text-gray-200">
+              Crea interfaces centradas en el usuario, enfocadas en usabilidad,
+              estética y empatía.
+            </p>
+          </div>
+        </section>
+      </section>
+
+      <!-- Footer -->
+      <footer
+        class="mt-auto bg-gray-900 text-white text-center py-6 flex flex-col">
+        <p class="text-sm">
+          © 2025 Agencia Creativa. Todos los derechos reservados.
+        </p>
+        <p class="text-sm">Diseño multimedial</p>
+        <p class="text-sm">Turno mañana comosion A</p>
+        <p class="text-sm">Diseño y Programación Web I</p>
+        <p class="text-sm">TOYOS OMAR</p>
+        <p class="text-sm">8-5-2015</p>
+      </footer>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+    <script src="/imgReveal.js"></script>
+    <script src="/scratch.js"></script>
+    <script src="/scratch2.js"></script>
+    <script src="/scratch3.js"></script>
+    <script src="/scratch4.js"></script>
+  </body>
+</html>
